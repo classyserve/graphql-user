@@ -49,8 +49,10 @@ Then visit [http://localhost:3000/graphiql](http://localhost:3000/graphiql) to s
 
 Then try out:
 
+```txt
 mutation{
     register(firstName: "firstname", lastName: "lastname", email: "emailid", password:"password){
         id, firstName, lastName, email
     }
 }
+```
