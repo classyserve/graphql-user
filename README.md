@@ -1,4 +1,4 @@
-# graphql-blog-cms-api
+# graphql-user
 
 A GraphQl project for login and registration of user
 
