@@ -46,3 +46,11 @@ npm start
 ```
 
 Then visit [http://localhost:3000/graphiql](http://localhost:3000/graphiql) to see the application in action.
+
+Then try out:
+
+mutation{
+    register(firstName: "firstname", lastName: "lastname", email: "emailid", password:"password){
+        id, firstName, lastName, email
+    }
+}
