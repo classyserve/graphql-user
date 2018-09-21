@@ -1,6 +1,6 @@
 # graphql-user
 
-A GraphQl project for login and registration of user
+A graphql project depicting login/registration mutations
 
 ## Getting Started
 
