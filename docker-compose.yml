@@ -7,14 +7,10 @@ mysql_db:
   - MYSQL_ROOT_PASSWORD=root
   - MYSQL_DB=graphql_user
 
-graphql_codebase:
+graphql_runner:
   build: .
   volumes:
   - ./:/graphql
-
-graphql_runner:
-  extends:
-    service: graphql_codebase
   command: npm start
   ports:
     - "3000:3000"

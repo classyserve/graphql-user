@@ -10,7 +10,3 @@ RUN npm install
 RUN npm install sequelize-cli
 
 COPY . .
-
-EXPOSE 3000
-
-CMD [ "npm", "start" ]
