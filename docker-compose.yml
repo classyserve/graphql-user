@@ -1,0 +1,23 @@
+
+mysql_db:
+  image: mysql
+  ports:
+  - "3306:3306"
+  environment:
+  - MYSQL_ROOT_PASSWORD=root
+  - MYSQL_DB=graphql_user
+
+graphql_codebase:
+  build: .
+  volumes:
+  - ./:/graphql
+
+graphql_runner:
+  extends:
+    service: graphql_codebase
+  command: npm start
+  ports:
+    - "3000:3000"
+
+
+
