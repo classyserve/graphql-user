@@ -4,16 +4,10 @@ A graphql project depicting login/registration mutations
 
 ## Getting Started
 
-Clone the project repository by running the command below if you use SSH
+Clone the project repository by running the command below 
 
 ```bash
-git clone https://rajkris5@bitbucket.org/rajkris5/graphql_user.git
-```
-
-If you use https, use this instead
-
-```bash
-git clone https://rajkris5@bitbucket.org/rajkris5/graphql_user.git
+git clone https://github.com/classyserve/graphql-user.git
 ```
 
 After cloning, run:
