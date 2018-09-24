@@ -24,8 +24,8 @@ services:
     restart: on-failure
     depends_on:
       - db
-    # command: npm run db:migrate
-    command: ["./waitformysql.sh", "graphql_user", "npm", "run", "db:migrate"]
+    command: npm run db:migrate
+    # command: ["./waitformysql.sh", " graphql_user", " npm", " run", " db:migrate"]
 
   graphql_runner:
     build: .

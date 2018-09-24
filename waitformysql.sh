@@ -1,21 +1,16 @@
-#!/bin/bash
-# wait-for-mysql.sh
+# #!/bin/bash
+# # wait-for-mysql.sh
 
 set -e
 
-host="$1"
-# port="$2"
-# db="$3"
+db="$1"
+port="$2"
+db="$3"
 shift
 cmd="$@"
 
-# UP=$(pgrep mysql | wc -l);
-# until mysql -h"$host" -proot -P"$port" -uroot &> /dev/null
-until ! mysql -u root -e "$db";
+until [ mysql -h"$host" -proot -P"$port" -uroot &> /dev/null ]
 do
   printf "."
-  sleep 1
+  sleep 1 
 done
-
-echo "Mysql is up - executing command"
-exec $cmd
